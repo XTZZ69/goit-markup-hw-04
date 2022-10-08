@@ -63,7 +63,7 @@
     <section class="main-board">
       <div class="container">
         <h1 class="board-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="main-btn button">
+        <button type="button" data-modal-open class="main-btn button">
           Замовити послугу
         </button>
       </div>
@@ -129,13 +129,23 @@
         <h2 class="profile-title">Чим ми займаємося</h2>
         <ul class="profile-list list">
           <li class="profile-item">
-            <img src="./images/programming.jpg" alt="programming" width="370" height="294" />
+            <div class="profile-wrap"><img src="./images/programming.jpg" alt="programming" width="370" height="294" />
+              <h3 class="profile-top-title">ДЕСКТОПНІ ДОДАТКИ</h3>
+            </div>
+
           </li>
           <li class="profile-item">
-            <img src="./images/applications.jpg" alt="applications" width="370" height="294" />
+            <div class="profile-wrap"><img src="./images/applications.jpg" alt="applications" width="370"
+                height="294" />
+              <h3 class="profile-top-title">МОБІЛЬНІ ДОДАТКИ</h3>
+            </div>
+
           </li>
           <li class="profile-item">
-            <img src="./images/photoshop.jpg" alt="Photoshop" width="370" height="294" />
+            <div class="profile-wrap"><img src="./images/photoshop.jpg" alt="Photoshop" width="370" height="294" />
+              <h3 class="profile-top-title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
+            </div>
+
           </li>
         </ul>
       </div>
@@ -410,6 +420,16 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" data-modal-close class="modal-btn">
+        <svg class="model-close-icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/model.js"></script>
 </body>
 
 </html>
